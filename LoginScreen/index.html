@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Login Screen</title>
+</head>
+<body>
+    <section class="bg-gray-50 min-h-screen 
+    flex items-center justify-center">
+        <!--Login Container-->
+        <div class="bg-gray-200 flex items-center 
+        rounded-2xl shadow-2xl max-w-3xl p-5">
+            <!--Form-->
+            <div class="md:w-1/2 px-16">
+                <h2 class="font-bold 
+                text-2xl text-[#628AE2]">Login <span class="font-bold text-2xl text-[#000]">My Schedule</span></h2>
+
+
+                <form action="" class="flex flex-col gap-4">
+                    <input class="p-2 mt-5 rounded-xl border" type="text" 
+                    name="email" placeholder="Email">
+                    <div class="relative">
+                        <input class="p-2 rounded-xl 
+                        border w-full mt-3" type="password" 
+                        name="password" 
+                        placeholder="Password">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray" class="bi bi-eye absolute top-1/2 right-3 -translate-y-1/2" viewBox="0 0 16 16">
+                            <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"/>
+                            <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"/>
+                          </svg>
+                    </div>
+                    <button class="bg-[#628AE2] rounded-lg
+                    text-white py-2 text-sm mt-3 hover:scale-105 duration-300">Login</button>
+                </form>
+
+                <div class="mt-5 grid grid-cols-3
+                items-center text-gray-500">
+                    <hr class="border-gray-400">
+                    <p class="text-center text-sm">OR</p>
+                    <hr class="border-gray-400">
+                </div>
+
+                <button class="bg-white border py-1 mt-5 w-full
+                rounded-xl flex justify-center items-center text-sm hover:scale-105 duration-300">
+                <svg class="mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="20px" height="25px">
+                    <path fill="#4285F4" d="M44.5,20H24v8.5h11.8C33.5,33.4,29.2,36,24,36c-6.6,0-12-5.4-12-12s5.4-12,12-12c3.1,0,5.8,1.1,8,2.9l6.4-6.4C34.5,5.1,29.5,3,24,3C11.8,3,2,12.8,2,25s9.8,22,22,22c11,0,20-8,20-20C44,25.7,44.3,22.8,44.5,20z" />
+                    <path fill="#EA4335" d="M6.3,14.1l6.6,4.8c2.4-4.8,7.3-8.4,13.1-8.4c3.1,0,5.8,1.1,8,2.9l6.4-6.4C34.5,5.1,29.5,3,24,3C15.1,3,7.8,7.8,6.3,14.1z" />
+                    <path fill="#FBBC05" d="M24,47c5.9,0,11-2.2,14.8-5.8l-7-5.7C29.7,37.7,27,38.5,24,38.5c-5.9,0-11-4-12.8-9.5l-7.1,5.5C7.6,42.4,15.2,47,24,47z" />
+                    <path fill="#34A853" d="M44.5,20H24v8.5h11.8c-1,3.1-3.4,5.5-6.5,6.9l7,5.7c4.1-3.7,6.7-9.1,6.7-15.6C44,25.7,44.3,22.8,44.5,20z" />
+                    <path fill="none" d="M0,0h48v48H0V0z" />
+                  </svg>
+                    Login with Google
+                </button>
+
+                <button>
+                <p class="mt-2 text-xs 
+                border-b py-4 border-gray-400"> 
+                Forgot your password?</p>
+                </button>
+
+                <div class="text-xs flex 
+                justify-between items-center mt-1">
+                    <p>Don't have an account?</p>
+                    <button class="py-2 px-4 
+                    bg-white border rounded-xl hover:scale-105 duration-300">
+                        Register
+                    </button>
+                </div>
+            </div>
+            <!--Image Login-->
+            <div class="md:block hidden w-1/2 p-5">
+                <img class="rounded-2xl" 
+                src="udinus1.jpg" alt="">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
